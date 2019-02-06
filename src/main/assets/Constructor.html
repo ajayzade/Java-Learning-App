@@ -1,0 +1,62 @@
+<html>
+<body>
+<font color="#0000ff">package</font> constructor;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> Constructor {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        String name;<br>
+        <font color="#0000ff">int</font> id;<br>
+        <font color="#0000ff">float</font> percentage;<br>
+        Scanner sc = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+        Student[] s = <font color="#0000ff">new</font> Student[5];<br>
+        <font color="#0000ff">int</font> n,i;<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter no. of students"</font>);<br>
+        n = sc.nextInt();<br>
+        <font color="#0000ff">for</font>(i=0;i < n;i++){<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter Student Details in name,id and percentage"</font>);<br>
+            name = sc.next();<br>
+            id = sc.nextInt();<br>
+            percentage = sc.nextFloat();<br>
+            s[i] = <font color="#0000ff">new</font> Student(name,id,percentage);<br>
+        }<br>
+        <font color="#0000ff">for</font>(i=0;i < n;i++){<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Details of Student "</font>+(i+1)+<font color="#ff4500">" is :"</font>);<br>
+            s[i].showDetails();<br>
+        }<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> Student{<br>
+    String name;<br>
+    <font color="#0000ff">int</font> id;<br>
+    <font color="#0000ff">float</font> percentage;<br>
+    Student(String name,<font color="#0000ff">int</font> id,<font color="#0000ff">float</font> percentage){<br>
+        <font color="#0000ff">this</font>.name = name;<br>
+        <font color="#0000ff">this</font>.id = id;<br>
+        <font color="#0000ff">this</font>.percentage = percentage;<br>
+    }<br>
+    void showDetails(){<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Name : "</font>+name);<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"ID : "</font>+id);<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Percentage : "</font>+percentage);<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Enter no. of students<br>
+2<br>
+Enter Student Details in name,id and percentage<br>
+Rohit 20 89.34<br>
+Enter Student Details in name,id and percentage<br>
+Rumit 21 90.90<br>
+Details of Student 1 is :<br>
+Name : Rohit<br>
+ID : 20<br>
+Percentage : 89.34<br>
+Details of Student 2 is :<br>
+Name : Rumit<br>
+ID : 21<br>
+Percentage : 90.9<br><br>
+</body>
+</html>

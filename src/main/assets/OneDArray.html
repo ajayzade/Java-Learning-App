@@ -1,0 +1,28 @@
+<html>
+<body>
+<font color="#0000ff">package</font> onedarray;<br><br>
+
+<font color="#0000ff">public class</font> OneDArray {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font>[] a1 = {64,52,99,12,90};<br>
+        <font color="#0000ff">int</font>[] a2 = {56,12,88,32,82};<br>
+        <font color="#0000ff">int</font>[] a = new <font color="#0000ff">int</font>[5];<br>
+        <font color="#0000ff">for</font>(int i=0;i < a1.<font color="#ff4500">length</font>;i++){<br>
+            a[i] = a1[i] + a2[i];<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Addition of two 1D arrays is"</font>);<br>
+        <font color="#0000ff">for</font>(<font color="#0000ff">int</font> arr:a){<br>
+            System.<font color="#ff4500">out</font>.println(arr);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Addition of two 1D arrays is<br>
+120<br>
+64<br>
+187<br>
+44<br>
+172<br><br>
+</body>
+</html>

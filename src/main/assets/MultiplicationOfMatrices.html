@@ -1,0 +1,93 @@
+<html>
+<body>
+<font color="#0000ff">package</font> multiplicationofmatrices;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> MultiplicationOfMatrices {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Scanner sc = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+        <font color="#0000ff">int</font> i,j,k,r1,c1,r2,c2,sum = 0;<br><br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter the no. of rows and columns for matrix 1"</font>);<br>
+        r1 = sc.nextInt();<br>
+        c1 = sc.nextInt();<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter the no. of rows and columns for matrix 2"</font>);<br>
+        r2 = sc.nextInt();<br>
+        c2 = sc.nextInt();<br>
+        <font color="#0000ff">if</font>(c1 == r2){<br>
+            <font color="#0000ff">int</font>[][] a = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[r1][c1];<br>
+            <font color="#0000ff">int</font>[][] b = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[r2][c2];<br>
+            <font color="#0000ff">int</font>[][] m = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[c1][r2];<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter elements for matrix a"</font>);<br>
+            <font color="#0000ff">for</font>(i=0;i < r1;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c1;j++){<br>
+                    a[i][j] = sc.nextInt();<br>
+                }<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter elements for matrix b"</font>);<br>
+            <font color="#0000ff">for</font>(i=0;i < r2;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c2;j++){<br>
+                    b[i][j] = sc.nextInt();<br>
+                }<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"The matrix a is :"</font>);<br>
+            <font color="#0000ff">for</font>(i=0;i < r1;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c1;j++){<br>
+                    System.<font color="#ff4500">out</font>.print(a[i][j]+<font color="#ff4500">"\t"</font>);<br>
+                }<br>
+                System.<font color="#ff4500">out</font>.println();<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"The matrix b is :"</font>);<br>
+            <font color="#0000ff">for</font>(i=0;i < r2;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c2;j++){<br>
+                    System.<font color="#ff4500">out</font>.print(b[i][j]+<font color="#ff4500">"\t"</font>);<br>
+                }<br>
+                System.<font color="#ff4500">out</font>.println();<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Multiplication of matrices a and b is : "</font>);<br>
+            <font color="#0000ff">for</font>(i=0;i < r1;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c2;j++){<br>
+                    <font color="#0000ff">for</font>(k=0;k < r2;k++){<br>
+                        sum = sum + a[i][k]*b[k][j];<br>
+                    }<br>
+                    m[i][j] = sum;<br>
+                    sum = 0;<br>
+                }<br>
+            }<br>
+            <font color="#0000ff">for</font>(i=0;i < r2;i++){<br>
+                <font color="#0000ff">for</font>(j=0;j < c1;j++){<br>
+                    System.<font color="#ff4500">out</font>.print(m[i][j]+<font color="#ff4500">"\t"</font>);<br>
+                }<br>
+                System.<font color="#ff4500">out</font>.println();<br>
+            }<br>
+        }else{<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Matrix multiplication is not possible"</font>);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Enter the no. of rows and columns for matrix 1<br>
+3 4<br>
+Enter the no. of rows and columns for matrix 2<br>
+4 2<br>
+Enter elements for matrix a<br>
+53 74 -12 -10 72 12 11 99 90 -20 10 -1<br>
+Enter elements for matrix b<br>
+82 93 10 43 88 -23 -23 0<br>
+The matrix a is :<br>
+53	74	-12	-10<br>
+72	12	11	99<br>
+90	-20	10	-1<br>
+The matrix b is :<br>
+82	93<br>
+10	43<br>
+88	-23<br>
+-23	0<br>
+Multiplication of matrices a and b is :<br>
+4260	8387	0	0<br>
+4715	6959	0	0<br>
+8083	7280	0	0<br>
+0	0	0	0	<br><br>
+</body>
+</html>

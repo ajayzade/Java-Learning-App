@@ -1,0 +1,24 @@
+<html>
+<body>
+<font color="#0000ff">package</font> trycatchfinally;<br><br>
+
+<font color="#0000ff">public class</font> TryCatchFinally {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> a,b = 5,c = 0;<br>
+        <font color="#0000ff">try</font>{<br>
+            a = b/c;<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Value of a is "</font>+a);<br>
+        }<font color="#0000ff">catch</font>(ArithmeticException ae){<br>
+            a = c/b;<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Value of a is "</font>+a);<br>
+        }<font color="#0000ff">finally</font>{<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Finally block"</font>);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Value of a is 0<br>
+Finally block<br>
+</body>
+</html>

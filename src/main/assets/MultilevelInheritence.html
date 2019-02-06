@@ -1,0 +1,37 @@
+<html>
+<body>
+<font color="#0000ff">package</font> multilevelinheritence;<br><br>
+
+<font color="#0000ff">public class</font> MultilevelInheritence {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        C c = <font color="#0000ff">new</font> C();<br>
+        c.m3();<br>
+        c.m1();<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> A{<br>
+    <font color="#0000ff">int</font> c = 3;<br>
+    void m1(){<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"I am in A"</font>);<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> B <font color="#0000ff">extends</font> A{<br>
+    <font color="#0000ff">int</font> a = 10;<br>
+    void m2(){<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"I am in B"</font>);<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> C <font color="#0000ff">extends</font> B{<br>
+    <font color="#0000ff">int</font> b = a*c;<br>
+    void m3(){<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"b = "</font>+b);<br>
+        m2();<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+b = 30<br>
+I am in B<br>
+I am in A<br><br>
+</body>
+</html>

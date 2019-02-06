@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<body>
+  An Array is a collection of data elements of same data types.<br>
+  Once an array is created, its size is fixed. An array reference variable is used to access
+the elements in an array using an index.<br><br>
+<b><font color="#ff0000">Declaring an Array</font></b><br><br>
+To use an array in a program, you must declare a variable to reference the array and specify
+the array’s element type. Here is the syntax for declaring an array variable:<br>
+elementType[] arr;<br>
+The elementType can be any data type, and all elements in the array will have the same
+data type.<br><br>
+<b><font color="#ff0000">Creating an Array</font></b><br><br>
+Declaration of an array variable does not
+allocate any space in memory for the array. It creates only a storage location for the reference to
+an array. If a variable does not contain a reference to an array, the value of the variable is null.
+you can create an array by using the new operator with the following syntax:<br>
+arr = new elementType[arraySize];
+This statement does two things: (1) it creates an array using new elementType[array-
+Size]; (2) it assigns the reference of the newly created array to the variable arr.<br><br>
+double[] myList = new double[10];<br>
+For example, the following code initializes the array.<br>
+myList[0] = 5.6;<br>
+myList[1] = 4.5;<br>
+myList[2] = 3.3;<br>
+myList[3] = 13.2;<br>
+myList[4] = 4.0;<br>
+myList[5] = 34.33;<br>
+myList[6] = 34.0;<br>
+myList[7] = 45.45;<br>
+myList[8] = 99.993;<br>
+myList[9] = 11123;<br><br>
+<b><font color="#ff0000">Array Initializer</font></b><br><br>
+elementType[] arrayRefVar = {value0, value1, ..., valuek};<br><br>
+<b><font color="#ff0000">Multidimensional Arrays</font></b><br><br>
+An element in a two-dimensional array is accessed through a row and column index.
+The syntax for declaring a two-dimensional array is:<br>
+elementType[][] arrayRefVar;<br>
+or<br>
+elementType arrayRefVar[][];<br>
+Nested for loops are often used to process a two-dimensional array.<br><br>
+1. Initializing arrays with input values. The following loop initializes the array with user
+input values:<br><br>
+java.util.Scanner input = new Scanner(System.in);<br>
+System.out.println("Enter " + matrix.length + " rows and " +
+matrix[0].length + " columns: ");<br>
+for (int row = 0; row < ; row++) {<br>
+for (int column = 0; column < ; column++) {<br>
+matrix[row][column] = input.nextInt();<br>
+}<br>
+}<br><br>
+2. Initializing arrays with random values. The following loop initializes the array with
+random values between 0 and 99:<br><br>
+for (int row = 0; row < ; row++) {<br>
+for (int column = 0; column < ; column++) {<br>
+matrix[row][column] = (int)(Math.random() * 100);<br>
+}<br>
+}<br><br>
+3. Printing arrays. To print a two-dimensional array, you have to print each element in the
+array using a loop like the following:<br><br>
+for (int row = 0; row < ; row++) {<br>
+for (int column = 0; column < ; column++) {<br>
+System.out.print(matrix[row][column] + " ");<br>
+}<br>
+System.out.println();<br>
+}<br>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+  Methods can be used to define reusable code and organize and simplify code.<br>
+  <b><font color="#ff0000">Defining a method</font></b><br>
+  A method definition consists of its method name, parameters, return value type, and body.
+The syntax for defining a method is:<br><br>
+modifier returnValueType methodName(list of parameters) {<br>
+// Method body;<br>
+}<br><br>
+The method header specifies the modifiers, return value type, method name, and
+parameters of the method.A method may return a value. The returnValueType is the data type of the value the
+method returns.If a method returns a value, it is called a valuereturning
+method, otherwise it is called a void method.
+The variables defined in the method header are known as formal parameters or simply
+parameters. A parameter is like a placeholder: When a method is invoked, you pass a value to
+the parameter. This value is referred to as an actual parameter or argument. The parameter
+list refers to the method’s type, order, and number of the parameters. The method name and
+the parameter list together constitute the method signature.<br><br>
+<b><font color="#ff0000">Calling a method</font></b><br>
+Calling a method executes the code in the method.
+In a method definition, you define what the method is to do. To execute the method, you have
+to call or invoke it.
+If a method returns a value, a call to the method is usually treated as a value. For example,<br>
+int larger = max(3, 4);<br>
+calls max(3, 4) and assigns the result of the method to the variable larger.<br>
+This program contains the main method and the max method. The main method is just like
+any other method except that it is invoked by the JVM to start the program.
+The main method’s header is always the same. Like the one in this example, it includes the
+modifiers public and static, return value type void, method name main, and a parameter
+of the String[] type. String[] indicates that the parameter is an array of String<br><br>
+<b><font color="#ff0000">Passing parameters</font></b><br>
+The arguments are passed by value to parameters when invoking a method.
+The power of a method is its ability to work with parameters. You can use println to print
+any string and max to find the maximum of any two int values. When calling a method, you
+need to provide arguments, which must be given in the same order as their respective parameters
+in the method signature. This is known as parameter order association. For example, the
+following method prints a message n times:<br><br>
+public static void myMethod(String m, int n) {<br>
+for (int i = 0; i < n; i++)<br>
+System.out.println(m);<br>
+}<br>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+  The java.io package contains all the classes required for performing file operations.This happens
+  by stream.A stream is a sequence of data.We have output,input and error stream in java.<br>
+  Java uses outputstream for writing the data in the file and inputstream for reading the content of the file.
+  Stream is nothing but a connection.<br><br>
+  <b><font color="#ff0000">OutputStream</font></b><br><br>
+  outputstream class is an abstract class and had some following methods:<br>
+  1. public void write(int) throws IOException - it writes the byte to current outputstream<br>
+  2. public void write(byte[]) throws IOException - it writes the array of bytes to current outputstream<br>
+  3. public void flush() throws IOException - flushes the output stream<br>
+  4. public void close() throws IOException - closes the outputstream<br><br>
+  <b><font color="#ff0000">InputStream</font></b><br><br>
+  inputstream class is also an abstract class and had some following methods:<br>
+  1. public abstract int read() throws IOException - reads the next byte from inputstream<br>
+  2. public int available() throws IOException - returns the number of bytes available in stream<br>
+  3. public void close() throws IOException - closes the input stream<br><br>
+  Syntax for getting connection (stream) with a file is as follows:<br><br>
+  FileOutputStream fos = new FileOutputStream("file_location");<br>
+  FileInputStream fis = new FileInputStream("file_location");<br>
+  You will understand it better when will see its program.<br><br>
+</body>
+</html>

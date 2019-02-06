@@ -1,0 +1,32 @@
+<html>
+<body>
+<font color="#0000ff">package</font> selectionsort;<br><br>
+
+    <font color="#0000ff">public class</font> SelectionSort {<br>
+        <font color="#0000ff">public static void</font> main(String[] args) {<br>
+            <font color="#0000ff">int</font>[] data = {22,90,45,88,73};<br>
+                <font color="#0000ff">int</font> min,temp;<br>
+                    <font color="#0000ff">for</font>(<font color="#0000ff">int</font> i=1;i < data.<font color="#ff4500">length</font>;i++){<br>
+            min = i;<br>
+                        <font color="#0000ff">for</font>(<font color="#0000ff">int</font> j=i+1;j < data.<font color="#ff4500">length</font>;j++){<br>
+                            <font color="#0000ff">if</font>(data[j] < data[min]){<br>
+                    temp = data[j];<br>
+                    data[j] = data[min];<br>
+                    data[min] = temp;<br>
+                }<br>
+            }<br>
+        }<br>
+                                <font color="#0000ff">for</font>(<font color="#0000ff">int</font> d : data){<br>
+            System.<font color="#ff4500">out</font>.println(d);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+22<br>
+45<br>
+73<br>
+88<br>
+90<br><br>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "903843579676",
+    "firebase_url": "https://java-learning-e0f4b.firebaseio.com",
+    "project_id": "java-learning-e0f4b",
+    "storage_bucket": "java-learning-e0f4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903843579676:android:5105d6eac79f6c32",
+        "android_client_info": {
+          "package_name": "aj.java.lenovo.javalearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903843579676-0a73s9vmrhcucei58lldhjvev54q6suf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqWV1UJaTifLWktOqUk8QDoXRvh6IhWh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

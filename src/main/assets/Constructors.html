@@ -1,0 +1,60 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Constructor</font></b><br><br>
+  A Constructor is a special type of function or method.The main function of Constructor is to
+  initialize all the variables of class, but it can performed other piece of code that we want
+  to get executed.
+  Constructor has some of the special features
+  which are discussed below :<br>
+  1.It has no return type<br>
+  2.It has same name as that of the classname <br>
+  3.Constructor can be overload.
+  4.It is executed when object of that class is created<br><br>
+  Types of constructors are discussed below<br>
+  1.Default Constructor<br>
+  2.Non-Parameterized Constructor<br>
+  3.Parameterized Constructor<br>
+  4.Overloaded Constructor<br><br>
+  <b><font color="#ff0000">Default Constructor</font></b><br><br>
+  This Constructor get automatically executed when the program is get compliled.<br><br>
+  <b><font color="#ff0000">Non-Parameterized Constructor</font></b><br><br>
+  It does not have any parameter and it can executed when objects are created.<br>
+  class Main(){<br>
+    Main(){<br>
+      System.out.println("This is Constructor");<br>
+    }<br>
+    public static void main(String[] args){<br>
+      Main m = new Main();<br>
+    }<br>
+  }<br><br>
+  <b><font color="#ff0000">Parameterized Constructor</font></b><br><br>
+  It contains some parameters in its structure.<br>
+  class Main(){<br>
+    Main(int a,String s){<br>
+      System.out.println(a + "and" + s);<br>
+    }<br>
+    public static void main(String[] args){<br>
+      Main m = new Main(23,"java");<br>
+    }<br>
+  }<br><br>
+  <b><font color="#ff0000">Overloaded Constructor</font></b><br><br>
+  The name of Constructor is same but it defers in the number,type and format of the
+  parameter list.<br>
+  class Main(){<br>
+    Main(){<br>
+      System.out.println("This is constructor");<br>
+    }<br>
+    Main(double d){<br>
+      System.out.println(d);<br>
+    }<br>
+    Main(int a,String s){<br>
+      System.out.println(a + "and" + s);<br>
+    }<br>
+    public static void main(String[] args){<br>
+      Main m = new Main(23,"java");<br>
+    }<br>
+  }<br><br>
+</body>
+</html>

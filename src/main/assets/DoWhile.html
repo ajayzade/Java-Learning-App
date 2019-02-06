@@ -1,0 +1,22 @@
+<html>
+<body>
+<font color="#0000ff">package</font> dowhile;<br><br>
+
+<font color="#0000ff">public class</font> DoWhile {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> n = 345,r,sum = 0;<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Sum of digits of number n is :"</font>);<br>
+        <font color="#0000ff">do</font>{<br>
+            r = n % 10;<br>
+            sum = sum + r;<br>
+            n = n / 10;<br>
+        }<font color="#0000ff">while</font>(n != 0);<br>
+        System.<font color="#ff4500">out</font>.println(sum);<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Sum of digits of number n is :<br>
+12<br><br>
+</body>
+</html>

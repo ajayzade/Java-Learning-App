@@ -1,0 +1,38 @@
+<html>
+<body>
+<font color="#0000ff">package</font> binary.search;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br>
+
+<font color="#0000ff">public class</font> BinarySearch {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Scanner s = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+        <font color="#0000ff">int</font> arr[] = {10,20,30,40,50,60,70,80,90};<br>
+        <font color="#0000ff">int</font> beg,end,item,mid,loc = 0;<br>
+        <font color="#0000ff">boolean</font> flag = true;<br>
+        beg = 0;<br>
+        end = arr.<font color="#ff4500">length</font> - 1;<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter item to be searched"</font>);<br>
+        item = s.nextInt();<br>
+        mid = (beg + end)/2;<br>
+        <font color="#0000ff">while</font>((beg <= end) && (arr[mid] != item)){<br>
+            <font color="#0000ff">if</font>(arr[mid] < item){<br>
+                beg = mid + 1;<br>
+            }<font color="#0000ff">else</font>{<br>
+                end = mid - 1;<br>
+            }<br>
+            mid = (beg + end)/2;<br>
+        }<br>
+        <font color="#0000ff">if</font>(arr[mid] == item){<br>
+            loc = mid;<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Location of "</font>+item+<font color="#ff4500">" is at "</font>+loc);<br>
+    }<br>
+}<br><br>
+
+Output:<br>
+Enter item to be searched<br>
+70<br>
+Location of 70 is at 6<br><br>
+</body>
+</html>

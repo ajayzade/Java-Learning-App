@@ -1,0 +1,23 @@
+<html>
+<body>
+<font color="#0000ff">package</font> decimaltobinary;<br><br>
+
+<font color="#0000ff">public class</font> DecimalToBinary {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> d = 2356,r;<br>
+        String s = <font color="#ff4500">""</font>;<br>
+        <font color="#0000ff">while</font>(d!=0){<br>
+            r = d % 2;<br>
+            s = s + String.valueOf(r);<br>
+            d = d/2;<br>
+        }
+        StringBuilder sb = <font color="#0000ff">new</font> StringBuilder(s);<br>
+        sb = sb.reverse();<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Equivalent of d in binary is = "</font>+sb);<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Equivalent of d in binary is = 100100110100<br><br>
+</body>
+</html>

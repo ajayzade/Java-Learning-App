@@ -1,0 +1,28 @@
+<html>
+<body>
+<font color="#0000ff">package</font> randomclass;<br><br>
+
+<font color="#0000ff">import</font> java.util.Random;<br><br>
+
+<font color="#0000ff">public class</font> RandomClass {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Random r1 = <font color="#0000ff">new</font> Random(50);<br>
+        Random r2 = <font color="#0000ff">new</font> Random(50);<br>
+        System.<font color="#ff4500">out</font>.println(r1.nextBoolean());<br>
+        System.<font color="#ff4500">out</font>.println(r1.nextInt());<br>
+        System.<font color="#ff4500">out</font>.println(r1.nextDouble());<br>
+        System.<font color="#ff4500">out</font>.println(r2.nextFloat());<br>
+        System.<font color="#ff4500">out</font>.println(r2.nextLong());<br>
+        System.<font color="#ff4500">out</font>.println(r2.nextInt(1000));<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+true<br>
+-1727040520<br>
+0.6141579720626675<br>
+0.7297136<br>
+-7417582553924012829<br>
+512<br><br>
+</body>
+</html>

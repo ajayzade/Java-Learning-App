@@ -1,0 +1,46 @@
+<html>
+<body>
+<font color="#0000ff">package</font> ojectasargument;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> OjectAsArgument {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter Time 1 in hours,minutes and seconds"</font>);<br>
+        Time t1 = <font color="#0000ff">new</font> Time();<br>
+        Time t2 = <font color="#0000ff">new</font> Time();<br>
+        Time t3 = <font color="#0000ff">new</font> Time();<br>
+        t1.getTime();<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter Time 2 in hours,minutes and seconds"</font>);<br>
+        t2.getTime();<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Addition of Time is"</font>);<br>
+        t3 = t3.addTime(t1, t2);<br>
+        System.<font color="#ff4500">out</font>.println(t3.hours+<font color="#ff4500">":"</font>+t3.minutes+<font color="#ff4500">":"</font>+t3.seconds);<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> Time{<br>
+    <font color="#0000ff">int</font> hours,minutes,seconds;<br>
+    Scanner sc = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+    void getTime(){<br>
+        hours = sc.nextInt();<br>
+        minutes = sc.nextInt();<br>
+        seconds = sc.nextInt();<br>
+    }<br>
+    Time addTime(Time tx1,Time tx2){<br>
+        Time t = <font color="#0000ff">new</font> Time();<br>
+        t.hours = tx1.hours + tx2.hours + (tx1.minutes+tx2.minutes)/60;<br>
+        t.minutes = (tx1.minutes + tx2.minutes)%60 + (tx1.seconds+tx2.seconds)/60;<br>
+        t.seconds = (tx1.seconds + tx2.seconds)%60;<br>
+        <font color="#0000ff">return</font> t;<br>
+    }<br>
+}<br>
+
+Output:<br><br>
+Enter Time 1 in hours,minutes and seconds<br>
+4 56 27<br>
+Enter Time 2 in hours,minutes and seconds<br>
+5 41 44<br>
+Addition of Time is<br>
+10:38:11<br><br>
+</body>
+</html>

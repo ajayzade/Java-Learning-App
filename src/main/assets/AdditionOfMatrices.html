@@ -1,0 +1,32 @@
+<html>
+<body>
+<font color="#0000ff">package</font> additionofmatrices;<br><br>
+
+<font color="#0000ff">public class</font> AdditionOfMatrices {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font>[][] a = {{5,6,9},{11,3,20},{47,11,10}};<br>
+        <font color="#0000ff">int</font>[][] b = {{23,14,66},{14,74,32},{10,14,21}};<br>
+        <font color="#0000ff">int</font>[][] c = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[3][3];<br>
+        <font color="#0000ff">int</font> i,j;<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">Addition of two matrices is"</font>);<br>
+        <font color="#0000ff">for</font>(i=0;i < 3;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < 3;j++){<br>
+                c[i][j] = a[i][j] + b[i][j];<br>
+            }<br>
+        }<br>
+        <font color="#0000ff">for</font>(i=0;i < 3;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < 3;j++){<br>
+                System.<font color="#ff4500">out</font>.print(c[i][j]+<font color="#ff4500">\t"</font>);<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println();<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br>
+Addition of two matrices is<br>
+28	20	75<br>
+25	77	52<br>
+57	25	31<br><br>
+</body>
+</html>

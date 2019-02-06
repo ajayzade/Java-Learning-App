@@ -1,0 +1,22 @@
+<html>
+<body>
+<font color="#0000ff">package</font> pkgwhile;<br><br>
+
+<font color="#0000ff">public class</font> While {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> n = 896,r,rev = 0;<br>
+System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Reverse of n is : "</font>);<br>
+        <font color="#0000ff">while</font>(n != 0){<br>
+            r = n % 10;<br>
+            rev = r + rev*10;<br>
+            n = n / 10;<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(rev);<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Reverse of n is : <br>
+698<br><br>
+</body>
+</html>

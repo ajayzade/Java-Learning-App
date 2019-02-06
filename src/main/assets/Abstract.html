@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Abstract Class</font></b><br><br>
+  The class which is declared by placing the keyword 'abstract' in front of it.It can contain
+  both abstract and non-abstract methods.Abstract class cannot have a object.It can have constructors
+  and static,final methods also.Syntax :<br>
+  abstract class A{}<br><br>
+  <b><font color="#ff0000">Abstract Methods</font></b><br><br>
+  A method which is declared as abstract and is not implemented is known as abstract method.<br>
+  abstract void func();<br>
+  <br>
+  abstract class A{<br>
+    abstract void m1();<br>
+  }<br>
+  class B extends A{<br>
+    void m1(){<br>
+      System.out.println("This is m1");<br>
+    }<br>
+    public static void main(String[] args){<br>
+      B b = new B();<br>
+      b.m1();<br>
+    }<br>
+  }<br>
+  Output:<br>
+  This is m1<br><br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Interface</font></b><br><br>
+  An interface is like a class but not a class.It has only static constants and
+  abstract methods.A class implements a interface.It acheives the Abstraction and supports multiple inheritence
+  in java.Syntax is :<br>
+  interface name{}<br>
+  <br>
+  interface I{<br>
+    void m1(); //It is by default abstract<br>
+  }<br>
+  class A implements I{<br>
+    public void m1(){<br>
+      System.out.println("Hiii m1");<br>
+    }<br>
+    public static void main(String[] args){<br>
+      A obj = new A();<br>
+      obj.m1();<br>
+    }<br>
+  }<br>
+  Output:<br>
+  Hiii m1<br><br>
+  <b><font color="#ff0000">Packages</font></b><br><br>
+  A package in java is a group of classes,interfaces and sub-packages.There are two types of
+  packages which are user-defined packages and built-in packages.Packages can be use to store interfaces
+  and classes within it.It provides access protection also.'package' keyword is used to create a package
+  in java<br><br>
+  package mypackage;<br>
+  public class A{<br>
+    public static void main(String[] args){<br>
+      System.out.println("Hello Package");<br>
+    }<br>
+  }<br>
+  Output:<br>
+  Hello Package<br><br>
+  'import' keyword is used to access the classes inside a package<br>
+  1.import mypackage.*;<br>
+  this will import all the classes inside mypackage<br>
+  2.import mypackage.ClassName;<br>
+  this will import only class ClassName<br><br><br>
+  <b><font color="#ff0000">Access Modifiers</font></b><br><br>
+  The access modifiers in java specifies the accessibility or scope of variable,method,constructor or class.
+  There are 4 types of access modifiers in java:<br>
+  1.public<br>
+  2.protected<br>
+  3.private<br>
+  4.default<br><br>
+  1.The public access modifier is accessible anywhere, it has very wide scope.It gives accessibility outside packages,
+  classes etc.<br><br>
+  2.The protected access modifier is accessible within package and outside package by inheritence.<br><br>
+  3.The private access modifier gives accessibility only within a class.<br><br>
+  4.If any access modifier is not used then default access modifier is there bydefault and it is accessible only
+  within the package.<br><br>
+</body>
+</html>

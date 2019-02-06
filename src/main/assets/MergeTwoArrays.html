@@ -1,0 +1,37 @@
+<html>
+<body>
+<font color="#0000ff">package</font> mergetwoarrays;<br><br>
+
+<font color="#0000ff">public class</font> MergeTwoArrays {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+       <font color="#0000ff">int</font>[] a1 = {1,4,3,7,3};<br>
+       <font color="#0000ff">int</font>[] a2 = {23,78,12,90,22};<br>
+<font color="#0000ff">int</font>[] a = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[a1.<font color="#ff4500">length</font>+a2.<font color="#ff4500">length</font>];<br>
+       <font color="#0000ff">int</font> i;<br>
+       <font color="#0000ff">for</font>(i=0;i < a1.<font color="#ff4500">length</font>;i++){<br>
+           a[i] = a1[i];<br>
+       }<br>
+       <font color="#0000ff">for</font>(i=0;i < a1.<font color="#ff4500">length</font>;i++){<br>
+           a[a1.<font color="#ff4500">length</font> + i] = a2[i];<br>
+       }<br>
+       System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"The Merged array is"</font>);<br>
+       <font color="#0000ff">for(<font color="#0000ff">int</font> arr:a){<br>
+           System.<font color="#ff4500">out</font>.println(arr);<br>
+       }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+The Merged array is<br>
+1<br>
+4<br>
+3<br>
+7<br>
+3<br>
+23<br>
+78<br>
+12<br>
+90<br>
+22<br><br>
+</body>
+</html>

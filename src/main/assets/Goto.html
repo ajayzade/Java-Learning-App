@@ -1,0 +1,32 @@
+<html>
+<body>
+<font color="#0000ff">package</font> pkggoto;<br><br>
+
+<font color="#0000ff">public class</font> Goto {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> data[] = {12,73,22,93,10,39,67,34,71,20};<br>
+	      <font color="#0000ff">int</font> k = 0,max,loc;<br>
+	      max = data[0];<br>
+	      loc = 0;<br><br>
+
+	check:<br>
+		<font color="#0000ff">if</font>(max<=data[k]){<br>
+			max = data[k];<br>
+			loc = k;<br>
+		}<br><br>
+
+  <font color="#0000ff">if</font>(k < 9){<br>
+		k++;<br>
+		<font color="#0000ff">goto</font> check;<br>
+	}<br><br>
+
+	System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Largest element : "</font>+max);<br>
+	System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Location of largest element : "</font>+loc);<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Largest element : 93<br>
+Location of largest element : 3<br><br>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<body>
+<font color="#0000ff">package</font> transpose;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> Transpose {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Scanner sc = new Scanner(System.<font color="#ff4500">in</font>);<br>
+        <font color="#0000ff">int</font> i,j,r,c;<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter the no. of rows and columns"</font>);<br>
+        r = sc.nextInt();<br>
+        c = sc.nextInt();<br>
+        <font color="#0000ff">int</font>[][] a = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[r][c];<br>
+        <font color="#0000ff">int</font>[][] t = <font color="#0000ff">new</font> <font color="#0000ff">int</font>[r][c];<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter elements for matrix"</font>);<br>
+        <font color="#0000ff">for</font>(i=0;i < r;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < c;j++){<br>
+                a[i][j] = sc.nextInt();<br>
+            }<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"The given matrix is :"</font>);<br>
+        <font color="#0000ff">for</font>(i=0;i < r;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < c;j++){<br>
+                System.<font color="#ff4500">out</font>.print(a[i][j]+<font color="#ff4500">"\t"</font>);<br>
+            }<br>
+System.<font color="#ff4500">out</font>.println();<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Transpose of matrix is :"</font>);<br>
+        <font color="#0000ff">for</font>(i=0;i < r;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < c;j++){<br>
+                t[i][j] = a[j][i];<br>
+            }<br>
+        }<br>
+        <font color="#0000ff">for</font>(i=0;i < r;i++){<br>
+            <font color="#0000ff">for</font>(j=0;j < c;j++){<br>
+                System.<font color="#ff4500">out</font>.print(t[i][j]+<font color="#ff4500">"\t"</font>);<br>
+            }<br>
+            System.<font color="#ff4500">out</font>.println();<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Enter the no. of rows and columns<br>
+3 3<br>
+Enter elements for matrix<br>
+62 89 33 90 61 83 28 -64 -10<br>
+The given matrix is :<br>
+62	89	33<br>
+90	61	83<br>
+28	-64	-10<br>
+Transpose of matrix is :<br>
+62	90	28<br>
+89	61	-64<br>
+33	83	-10	<br><br>
+</body>
+</html>

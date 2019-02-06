@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">1. if</font></b><br><br>
+  An if statement executes the statements if the condition is true.
+  A one-way if statement executes an action if and only if the condition is true. The syntax
+  for a one-way if statement is:<br>
+  if(boolean-expression){<br>
+    statement(s);<br>
+  }<br>
+  If the boolean-expression evaluates to true, the statements in the block are executed, otherwise the control
+  of program goes to next statements.<br><br>
+  <b><font color="#ff0000">2. if-else</font></b><br><br>
+  An if-else statement decides which statements to execute based on whether the
+  condition is true or false.
+  A one-way if statement takes an action if the specified condition is true. If the condition is
+  false, nothing is done. But what if you want to take alternative actions when the condition is
+  false then you can use a two-way if-else statement.<br>
+  Here is the syntax for a two-way if-else statement:<br>
+  if (boolean-expression) {<br>
+     statement(s)-for-the-true-case;<br>
+  }<br>
+  else {<br>
+     statement(s)-for-the-false-case;<br>
+  }<br><br>
+  <b><font color="#ff0000">3. Nested if and multi-way if-else</font></b><br><br>
+  An if statement can be inside another if statement to form a nested if statement.
+  The inner if statement is said to be nested inside the outer
+  if statement. The inner if statement can contain another if statement; in fact, there is no
+  limit to the depth of the nesting. For example, the following is a nested if statement:<br>
+  if (i > k) {<br>
+   if (j > k)<br>
+      System.out.println("A");<br>
+  }<br>
+  else<br>
+      System.out.println("B");<br><br>
+  The nested if statement can be used to implement multiple choices.<br>
+  if (score >= 90.0)<br>
+  grade = 'A';<br>
+  else if (score >= 80.0)<br>
+  grade = 'B';<br>
+  else if (score >= 70.0)<br>
+  grade = 'C';<br>
+  else if (score >= 60.0)<br>
+  grade = 'D';<br>
+  else<br>
+  grade = 'F';<br>
+</body>
+</html>

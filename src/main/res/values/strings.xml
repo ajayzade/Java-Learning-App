@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Java Learning</string>
+    <string name="theory">THEORY</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2919657393459579/8074164168</string>
+    <string name="th1">Classes and Objects</string>
+    <string name="rate_us">Rate us</string>
+    <string name="references">References</string>
+    <string name="about_us">About us</string>
+    <string name="font_size">Font size</string>
+    <string name="one">10 points</string>
+    <string name="two">20 points</string>
+    <string name="three">30 points</string>
+    <string name="four">40 points</string>
+    <string name="five">50 points</string>
+    <string name="ok">OK</string>
+    <string name="share">Share app</string>
+</resources>

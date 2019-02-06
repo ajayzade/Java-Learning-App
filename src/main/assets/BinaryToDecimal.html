@@ -1,0 +1,21 @@
+<html>
+<body>
+<font color="#0000ff">package</font> binarytodecimal;<br><br>
+
+<font color="#0000ff">public class</font> BinaryToDecimal {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font> b = 1100101,i = 0,r,sum = 0;<br>
+        <font color="#0000ff">while</font>(b!=0){<br>
+            r = b % 10;<br>
+            sum = (<font color="#0000ff">int</font>) (sum + r*Math.pow(2,i));<br>
+            i++;<br>
+            b = b / 10;<br>
+        }<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Decimal equivalent of b = "</font>+sum);<br>
+    }<br>
+}<br><br>
+
+Output:<br>
+Decimal equivalent of b = 101<br><br>
+</body>
+</html>

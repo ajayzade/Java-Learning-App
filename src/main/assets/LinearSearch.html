@@ -1,0 +1,31 @@
+<html>
+<body>
+<font color="#0000ff">package</font> linear.search;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> LinearSearch {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Scanner s = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+        <font color="#0000ff">int</font> arr[] = {27,64,43,90,42,88,12,138,45,33};<br>
+        <font color="#0000ff">int</font> item,i=0,flag=0;<br>
+System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter the item to be search in array"</font>);<br>
+        item = s.nextInt();<br>
+        <font color="#0000ff">for</font>(i=0;i < arr.<font color="#ff4500">length</font>;i++){<br>
+            <font color="#0000ff">if</font>(arr[i] == item){<br>
+System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Location of "</font>+item+<font color="#ff4500">" is at "</font>+i);<br>
+                flag = 1;<br>
+            }<br>
+        }<br>
+        <font color="#0000ff">if</font>(flag == 0){<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Element "</font>+item+<font color="#ff4500">" is not present in array"</font>);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Enter the item to be search in array<br>
+45<br>
+Location of 45 is at 8<br><br>
+</body>
+</html>

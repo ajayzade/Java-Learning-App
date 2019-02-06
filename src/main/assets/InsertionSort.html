@@ -1,0 +1,35 @@
+<html>
+<body>
+<font color="#0000ff">package</font> insertionsort;<br><br>
+
+<font color="#0000ff">public class</font> InsertionSort {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">int</font>[] data = {56,69,11,75,12};<br>
+        <font color="#0000ff">int</font> temp,j,i=1,k=1;<br>
+        <font color="#0000ff">for</font>(i=1;i < data.<font color="#ff4500">length</font>;i++){<br>
+            j = i - 1;<br>
+            k = i;<br>
+            <font color="#0000ff">while</font>(j>=0){<br>
+                <font color="#0000ff">if</font>(data[j] > data[k]){<br>
+                    temp = data[j];<br>
+                    data[j] = data[k];<br>
+                    data[k] = temp;<br>
+                }<br>
+                j--;<br>
+                k--;<br>
+            }<br>
+        }<br>
+        <font color="#0000ff">for</font>(<font color="#0000ff">int</font> d : data){<br>
+            System.<font color="#ff4500">out</font>.println(d);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br>
+11<br>
+12<br>
+56<br>
+69<br>
+75<br>
+</body>
+</html>

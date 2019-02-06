@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Method Overloading</font></b><br><br>
+  When a class has multiple methods have same name but differ in their number of
+  parameters,their type and format it is known as Method Overriding.Method Overloading
+  increses the readability of program.<br><br>
+  <b><font color="#ff0000">By changing no. of arguments</font></b><br>
+  class A{<br>
+    int mul(int a,int b){<br>
+      return a*b;<br>
+    }<br>
+    int mul(int a,int b,int c){<br>
+      return a*b*c;<br>
+    }<br>
+  }<br>
+  class Main{<br>
+    public static void main(String[] args){<br>
+      A a = new A();<br>
+      System.out.println(a.mul(2,2));<br>
+      System.out.println(a.mul(1,2,3));<br>
+    }<br>
+  }<br>
+  Output:<br>
+  4<br>
+  6<br><br>
+  <b><font color="#ff0000">By changing data types of arguments</font></b><br>
+  class A{<br>
+    int mul(int a,int b){<br>
+      return a*b;<br>
+    }<br>
+    int mul(float a,float b){<br>
+      return a*b;<br>
+    }<br>
+  }<br>
+  class Main{<br>
+    public static void main(String[] args){<br>
+      A a = new A();<br>
+      System.out.println(a.mul(2,2));<br>
+      System.out.println(a.mul(2.5,2.5));<br>
+    }<br>
+  }<br>
+  Output:<br>
+  4<br>
+  6.25<br><br>
+  <b><font color="#ff0000">Method Overriding</font></b><br><br>
+  If subclass has same method exactly that of the parentclass then this condition is
+  known as Method Overriding.It is used to implement method which is already defined in
+  parent class and it is use for the runtime Polymorphism.But for method overriding the method
+  must have exactly same name and same parameters and their must be inheritence.<br><br>
+  class A{<br>
+    void m1(){<br>
+      System.out.println("This is m1");<br>
+    }<br>
+  }<br>
+  class B extends A{<br>
+    void m1(){<br>
+      System.out.println("Again this is m1");<br>
+    }<br>
+    public static void main(String[] args){<br>
+      B b = new B();<br>
+      b.m1();<br>
+    }<br>
+  }<br>
+  Output:<br>
+  Again this is m1<br><br>
+</body>
+</html>

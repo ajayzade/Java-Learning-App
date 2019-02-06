@@ -1,0 +1,31 @@
+<html>
+<body>
+<font color="#0000ff">package</font> instantiation;<br><br>
+
+<font color="#0000ff">import</font> java.util.Scanner;<br><br>
+
+<font color="#0000ff">public class</font> Instantiation {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        Scanner sc = <font color="#0000ff">new</font> Scanner(System.<font color="#ff4500">in</font>);<br>
+        Demo d = <font color="#0000ff">new</font> Demo();<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Enter name of your company"</font>);<br>
+        d.getName(sc.next());<br>
+        System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Your company name is : "</font>+d.putName());<br>
+    }<br>
+}<br>
+<font color="#0000ff">class</font> Demo{<br>
+    String name;<br>
+    void getName(String s){<br>
+        name = s;<br>
+    }<br>
+    String putName(){<br>
+        <font color="#0000ff">return</font> name;<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Enter name of your company<br>
+sisco<br>
+Your company name is : sisco<br><br>
+</body>
+</html>

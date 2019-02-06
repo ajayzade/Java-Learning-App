@@ -1,0 +1,98 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Inheritence in Java</font></b><br><br>
+  Inheritence is very important concept in OOPs.By inheritence you can built
+  new classes which holds the properties of other class(i.e its variables and methods).
+  The new class is known as sub-class while the class whose properties it hold is known as
+  super class.Inheritence is use for code reusability and method overriding.<br>
+  The syntax of Inheritence in java is :<br>
+  class Subclass-name extends Superclass-name{<br>
+    //methods and variables<br>
+  }<br>
+  Types of Inheritance in java are:<br>
+  1.Single<br>
+  2.Multilevel<br>
+  3.Heirarical<br>
+  4.Multiple<br>
+  <br>
+  Multiple Inheritance is not supported in java<br><br>
+  <b><font color="#ff0000">Single Inheritence</font></b><br>
+  class A{<br>
+    void m1(){<br>
+      System.out.println("I am m1");<br>
+    }<br>
+  }<br>
+  class B extends A{<br>
+    void m2(){<br>
+      System.out.println("I am m2");<br>
+    }<br>
+  }<br>
+  class Main{<br>
+    public static void main(String[] args){<br>
+      B b = new B();<br>
+      b.m1();<br>
+      b.m2();<br>
+    }<br>
+  }<br>
+  Output:<br>
+  I am m1<br>
+  I am m2<br><br>
+  <b><font color="#ff0000">Multilevel Inheritence</font></b><br>
+    class A{<br>
+      void m1(){<br>
+        System.out.println("I am m1");<br>
+      }<br>
+    }<br>
+    class B extends A{<br>
+      void m2(){<br>
+        System.out.println("I am m2");<br>
+      }<br>
+    }<br>
+    class C extends B{<br>
+      void m3(){<br>
+        System.out.println("I am m3");<br>
+      }<br>
+    }<br>
+    class Main{<br>
+      public static void main(String[] args){<br>
+        C c = new C();<br>
+        c.m1();<br>
+        c.m2();<br>
+        c.m3();<br>
+      }<br>
+    }<br>
+    Output:<br>
+    I am m1<br>
+    I am m2<br>
+    I am m3<br><br>
+    <b><font color="#ff0000">Heirarical Inheritence</font></b><br>
+      class A{<br>
+        void m1(){<br>
+          System.out.println("I am m1");<br>
+        }<br>
+      }<br>
+      class B extends A{<br>
+        void m2(){<br>
+          System.out.println("I am m2");<br>
+        }<br>
+      }<br>
+      class C extends A{<br>
+        void m3(){<br>
+          System.out.println("I am m3");<br>
+        }<br>
+      }<br>
+      class Main{<br>
+        public static void main(String[] args){<br>
+          C c = new C();<br>
+          c.m1();<br>
+          // c.m2() it will give an error.<br>
+          c.m3();<br>
+        }<br>
+      }<br>
+      Output:<br>
+      I am m1<br>
+      I am m2<br><br>
+</body>
+</html>

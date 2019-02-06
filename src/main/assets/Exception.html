@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+  <b><font color="#ff0000">Exception Handling</font></b><br><br>
+  Exception Handling is a powerful mechanism in java for handling the Exception or Errors.It maintained the
+  normal flow of the program.There are many types of Exception such as ClassNotFoundException,ArrayIndexOutOfBoundsException,
+  IOException,SQLException,ArithmeticException etc.Suppose there are 5 instructions in your program and if an error is occur at
+  3 then rest of instructions will not be executed, Exception Handling provides solution to this problem.The java.lang.Throwable
+  is the root class of Exception and Error.<br>
+  There are three types of exception in java :<br>
+  1.Checked exception<br>
+  2.Unchecked exception<br>
+  3.error<br><br>
+  1.The class which are from throwable class such as IOException,SQLException are checked at compile time
+  are known as checked exception.<br><br>
+  2.The exceptions which are found at runtime are known as unchecked exception such as ArithmeticException,
+  NullPointerException,ArrayIndexOutOfBoundsException etc.<br><br>
+  3.These are irrecovarable such as OutOfMemory,StackOverflow etc.<br><br>
+  Keywords use for handling the exceptions are:<br><br>
+  try - it holds the block of code which can have exception in it.It is followed by
+  catch or finally block.<br><br>
+  catch - The catch block handle the exception, but it must have a try block.<br><br>
+  finally - It is used to execute important block of code in program.<br><br>
+  throw - it is used to throw an exception<br><br>
+  throws - It  specifies that there may occur exception in the method.<br><br>
+  class Main{<br>
+    public static void main(String[] args){<br>
+      try{<br>
+        int a = 10/0;<br>
+      }catch(ArithmeticException e){<br>
+        System.out.println("error");<br>
+      }<br>
+    }<br>
+  }<br><br>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+<font color="#0000ff">package</font> nestedtrycatch;<br><br>
+
+<font color="#0000ff">public class</font> NestedTryCatch {<br>
+    <font color="#0000ff">public static void</font> main(String[] args) {<br>
+        <font color="#0000ff">try</font>{<br>
+            <font color="#0000ff">int</font> a[] = {2,8,6};<br>
+            System.<font color="#ff4500">out</font>.println(a[6]);<br>
+            <font color="#0000ff">try</font>{<br>
+                <font color="#0000ff">int</font> c = 4/0;<br>
+            }<font color="#0000ff">catch</font>(Exception e){<br>
+                System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Math Error"</font>);<br>
+            }<br>
+        }<font color="#0000ff">catch</font>(ArrayIndexOutOfBoundsException e){<br>
+            System.<font color="#ff4500">out</font>.println(<font color="#ff4500">"Out of Bounds Exception has been occured"</font>);<br>
+        }<br>
+    }<br>
+}<br><br>
+
+Output:<br><br>
+Out of Bounds Exception has been occured<br><br>
+</body>
+</html>
